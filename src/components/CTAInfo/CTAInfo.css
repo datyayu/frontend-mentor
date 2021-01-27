@@ -48,7 +48,7 @@
   background-color: var(--primary-color);
   color: var(--slider-background-color);
   padding: 1.25rem 4rem;
-  font-size: 1rem;
+  font-size: 1.4rem;
   outline: none;
   cursor: pointer;
   transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out,
@@ -73,5 +73,9 @@
   .cta-info-benefits,
   .cta-info-cta {
     width: 100%;
+  }
+
+  .cta-info-cta-button {
+    font-size: 1rem;
   }
 }

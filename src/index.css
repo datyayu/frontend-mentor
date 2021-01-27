@@ -24,10 +24,3 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-weight: 600;
 }
-
-/* Mobile */
-@media screen and (min-width: 750px) {
-  html {
-    font-size: 0.8rem;
-  }
-}

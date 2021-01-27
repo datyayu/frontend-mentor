@@ -1,5 +1,4 @@
 import propTypes from "prop-types";
-import SliderIcon from "../../images/icon-slider.svg";
 
 export function Slider({ stepCount, step, name, onStepChange }) {
   const cssStyles = getComputedStyle(document.documentElement);

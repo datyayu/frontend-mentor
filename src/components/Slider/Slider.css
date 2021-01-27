@@ -1,0 +1,33 @@
+.slider {
+  background-color: var(--slider-background-color);
+  width: 100%;
+  height: 12px;
+  border-radius: 10rem;
+  appearance: none;
+  margin-top: 3rem;
+  outline: none;
+}
+
+.slider::-webkit-slider- {
+  height: 10px;
+  width: 100%;
+  border-radius: 10rem;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  border-radius: 50%;
+  background-color: var(--slider-selected-color);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grabbing;
+  box-shadow: 0 0 10px 3px var(--slider-progress-color);
+}
+
+.slider-dot-icon {
+  pointer-events: none;
+  user-select: none;
+}

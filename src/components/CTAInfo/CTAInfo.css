@@ -1,0 +1,77 @@
+.cta-info {
+  padding: 1rem 4rem;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.cta-info-benefits {
+  width: 50%;
+}
+.cta-info-benefits-list {
+  list-style: none;
+  padding: 0;
+  text-align: start;
+}
+
+.cta-info-benefit {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  margin: 0;
+  width: 100%;
+}
+
+.cta-info-benefit-icon {
+  height: 15px;
+  width: 15px;
+  margin-right: 1rem;
+}
+
+.cta-info-benefit-text {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.cta-info-cta {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-info-cta-button {
+  margin: 0 auto;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--primary-color);
+  color: var(--slider-background-color);
+  padding: 1.25rem 4rem;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+}
+
+.cta-info-cta-button:hover {
+  color: var(--white-color);
+  background-color: var(--slider-selected-color);
+}
+
+@media screen and (max-width: 750px) {
+  .cta-info {
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+
+  .cta-info-benefit {
+    justify-content: center;
+  }
+
+  .cta-info-benefits,
+  .cta-info-cta {
+    width: 100%;
+  }
+}

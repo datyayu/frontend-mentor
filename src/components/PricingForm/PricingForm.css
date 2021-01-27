@@ -1,0 +1,118 @@
+.pricing-form {
+  color: var(--text-color);
+  padding: 3rem 4rem 2rem 4rem;
+}
+
+.pricing-form-plans {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.pricing-form-plans-pageview {
+  letter-spacing: 2px;
+}
+
+.pricing-form-plans-price {
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+.pricing-form-plans-price-amount {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  padding-right: 0.5rem;
+}
+
+.pricing-form-plans-price-text {
+  font-size: 1.1rem;
+}
+
+.pricing-form-billing {
+  display: flex;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-size: 0.95rem;
+  margin-top: 4rem;
+  align-items: center;
+}
+
+.pricing-form-billing-col {
+  width: 20%;
+}
+
+.pricing-form-billing-discount {
+  color: var(--warn-text-color);
+  background-color: var(--warn-background-color);
+  padding: 2px 8px;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .pricing-form {
+    padding: 3rem 2rem 2rem 2rem;
+  }
+
+  .pricing-form-plans {
+    flex-direction: column;
+  }
+
+  .pricing-form-plans-price {
+    margin-top: 2rem;
+  }
+
+  .pricing-form-plans-price-amount {
+    font-size: 2.2rem;
+    padding-right: 0.25rem;
+  }
+
+  .mobile-only {
+    display: flex;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .pricing-form-billing {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+  }
+
+  .pricing-form-billing-discount {
+    justify-content: flex-around;
+  }
+
+  .pricing-form-billing-col {
+    width: 40%;
+  }
+
+  .pricing-form-billing-col:nth-child(3) {
+    margin: 0 0.2rem;
+    width: 20%;
+    flex: 1;
+  }
+
+  .pricing-form-billing-col:first-child,
+  .pricing-form-billing-col:last-child {
+    width: 5%;
+  }
+
+  .pricing-form-billing-discount {
+    padding: 2px 5px;
+    width: 2rem;
+  }
+  .pricing-form-billing-discount-text {
+    display: none;
+  }
+}
